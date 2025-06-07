@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ポートフォリオ</title>
+
+  <link rel="preload" href="https://placehold.jp/2000x750.png" as="image" />
 </head>
 <body>
 
@@ -11,41 +13,171 @@
     <div class="l-header__logo"></div>
     <nav class="l-header__nav">
       <ul class="l-header__list">
-        <li><a href="" class="">メニュー1</a></li>
-        <li><a href="" class="">メニュー2</a></li>
-        <li><a href="" class="">メニュー3</a></li>
+        <li><a href="#introduction" class="">メニュー1</a></li>
+        <li><a href="#career" class="">メニュー2</a></li>
+        <li><a href="#skill" class="">メニュー3</a></li>
+        <li><a href="#works" class="">メニュー4</a></li>
       </ul>
     </nav>
   </header>
 
   <body id="body" class="l-body">
     <main class="l-main">
-      <div class="theme-mv"></div>
+      <div class="theme-mv">
+        <img src="https://placehold.jp/2000x750.png" alt="ダミー画像" width="2000" height="750" >
+      </div>
     </main>
 
-    <section id="" class="">
+    <!-- 自己紹介 -->
+    <section id="introduction" class="p-self_introduction">
       <h1 class="m-title">自己紹介</h1>
+      <div class="m-heading">
+        <h2 class="m-title"><i>アイコン</i>タイトル</h2>
+      </div>
+      <div class="m-content">
+        <div class="m-content__image">
+          <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+        </div>
+        <div class="m-content__read">
+          <p>
+            自己紹介テキスト
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="" class="">
+    <!-- キャリア紹介 -->
+    <section id="career" class="">
       <h1 class="m-title">キャリア紹介</h1>
+      <div class="m-toggle">
+        <article>
+          <div class="m-toggle__heading">
+            <h1 class="m-toggle__title">トグルタイトル</h1>
+          </div>
+          <div class="m-toggle__content">
+            <p class="m-toggle__read">トグルリード文</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="m-toggle__heading">
+            <h1 class="m-toggle__title">トグルタイトル</h1>
+          </div>
+          <div class="m-toggle__content">
+            <p class="m-toggle__read">トグルリード文</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="m-toggle__heading">
+            <h1 class="m-toggle__title">トグルタイトル</h1>
+          </div>
+          <div class="m-toggle__content">
+            <p class="m-toggle__read">トグルリード文</p>
+          </div>
+        </article>
+
+        <!--  -->
+        <details class="m-accordion">
+          <summary >アコーディオンタイトル</summary>
+          <div class="m-accordion__content">
+            <p>アコーディオンタイトル</p>
+          </div>
+        </details>
+
+        <details class="m-accordion">
+          <summary >アコーディオンタイトル</summary>
+          <div class="m-accordion__content">
+            <p>アコーディオンタイトル</p>
+          </div>
+        </details>
+
+        <details class="m-accordion">
+          <summary >アコーディオンタイトル</summary>
+          <div class="m-accordion__content">
+            <p>アコーディオンタイトル</p>
+          </div>
+        </details>
+      </div>
     </section>
 
-    <section id="" class="">
+    <!-- スキル紹介 -->
+    <section id="skill" class="">
       <h1 class="m-title">スキル紹介</h1>
+      <div class="content">
+        <h2 class="">利用ソフト</h2>
+        <dl class="m-data">
+          <dt>obsidian</dt>
+          <dd>思考まとめ・メモ</dd>
+          <dt>Visual Studio Code</dt>
+          <dd>コーディング</dd>
+          <dt>cursor</dt>
+          <dd>コーディング</dd>
+          <dt>Adobe Photoshop</dt>
+          <dd>デザイン書き出し</dd>
+          <dt>Adobe Illustrator</dt>
+          <dd>デザイン書き出し</dd>
+          <dt>Adobe XD</dt>
+          <dd>デザイン書き出し</dd>
+        </dl>
+
+        <h2 class="m-title">スキルレベル</h2>
+        <small>※5段階評価</small>
+        <ul class="m-list">
+          <li>HTML：★★★★★</li>
+          <li>CSS：★★★★★</li>
+          <li>JS：★★★☆☆</li>
+          <li>PHP：★★★☆☆</li>
+          <li>WordPress：★★★★☆</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="" class="">
+    <!-- 制作実績 -->
+    <section id="works" class="">
       <h1 class="m-title">制作実績</h1>
+
+      <div class="m-card">
+        <article>
+          <div class="m-card__image">
+            <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+          </div>
+          <div class="m-card__content">
+            <h1 class="m-card__title">カードタイトル</h1>
+            <p class="m-card__read">カードリード文</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="m-card__image">
+            <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+          </div>
+          <div class="m-card__content">
+            <h1 class="m-card__title">カードタイトル</h1>
+            <p class="m-card__read">カードリード文</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="m-card__image">
+            <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+          </div>
+          <div class="m-card__content">
+            <h1 class="m-card__title">カードタイトル</h1>
+            <p class="m-card__read">カードリード文</p>
+          </div>
+        </article>
+      </div>
     </section>
   </body>
 
   <footer id="footer" class="l-footer">
     <nav class="l-footer__nav">
       <ul class="l-footer__list">
-        <li><a href="" class="">メニュー1</a></li>
-        <li><a href="" class="">メニュー2</a></li>
-        <li><a href="" class="">メニュー3</a></li>
+        <li><a href="#introduction" class="">メニュー1</a></li>
+        <li><a href="#career" class="">メニュー2</a></li>
+        <li><a href="#skill" class="">メニュー3</a></li>
+        <li><a href="#works" class="">メニュー4</a></li>
       </ul>
     </nav>
   </footer>
