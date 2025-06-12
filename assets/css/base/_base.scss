@@ -1,0 +1,29 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+body {
+  @include fz($baseFontSize);
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+p,li,th,td,dd,dt {
+  line-height: 1.5;
+}
+
+a {
+  cursor: pointer;
+}

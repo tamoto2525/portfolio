@@ -11,33 +11,34 @@
   <!-- <link rel="icon" href="/favicon.ico" sizes="32x32"> -->
   <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
+  <!-- site -->
+  <title>フリーランスのコーダー</title>
+  <meta name="description" content="ホームページ制作のお手伝い">
+  <meta name="keywords" content="ホームページ制作,WEB制作,WordPress,フロントエンドエンジニア,WEBコーダー">
+
   <!-- og -->
   <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
   <meta property="og:title" content="" />
   <meta property="og:description" content="" />
-
-  <!-- site -->
-  <title>ポートフォリオ</title>
-  <meta name="description" content="">
 
   <script type="text/javascript" src="./assets/js/index.js"></script>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/index.css">
 
   <!-- pages -->
-  <link rel="stylesheet" href="./assets/css/top/style.css">
+  <link rel="stylesheet" href="./assets/css/pages/top.css">
   <link rel="preload" href="https://placehold.jp/2000x750.png" as="image" />
 </head>
 <body>
 
   <header id="header" class="l-header">
-    <div class="l-header__logo"></div>
+    <div class="l-header__logo">My Portfolio</div>
     <nav class="l-header__nav">
       <ul class="l-header__list">
-        <li><a href="#introduction" class="">メニュー1</a></li>
-        <li><a href="#career" class="">メニュー2</a></li>
-        <li><a href="#skill" class="">メニュー3</a></li>
-        <li><a href="#works" class="">メニュー4</a></li>
+        <li><a href="#introduction" class="">自己紹介</a></li>
+        <li><a href="#career" class="">キャリア紹介</a></li>
+        <li><a href="#skill" class="">スキル紹介</a></li>
+        <li><a href="#works" class="">制作物</a></li>
       </ul>
     </nav>
   </header>
@@ -48,190 +49,244 @@
         <img src="https://placehold.jp/2000x750.png" alt="ダミー画像" width="2000" height="750" >
       </div>
       <!-- 自己紹介 -->
-      <section id="introduction" class="p-self_introduction">
-        <h1 class="m-title">自己紹介</h1>
-        <div class="m-heading">
-          <h2 class="m-title"><i>アイコン</i>タイトル</h2>
-        </div>
-        <div class="m-content">
-          <div class="m-content__image">
-            <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
-          </div>
-          <div class="m-content__read">
-            <p>
-              自己紹介テキスト
-            </p>
+      <section id="introduction" class="theme-section p-self_introduction">
+        <div class="l-content">
+          <h1 class="m-title">自己紹介</h1>
+          <!-- <div class="m-heading">
+            <h2 class="m-title"><i>アイコン</i>タイトル</h2>
+          </div> -->
+          <div class="m-content">
+            <div class="m-content__image">
+              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+            </div>
+            <div class="m-content__read">
+              <p>
+                WEBサイト制作を7年間行っていました。<br>
+                分野としては、HTML/CSSコーディングをはじめとしたjQueryによるアニメーション等の実装が可能です。<br>
+                WordPress組み込みに関しても対応可能です。<br>
+                プログラミングによるカスタマイズも可能です。
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- キャリア紹介 -->
-      <section id="career" class="">
-        <h1 class="m-title">キャリア紹介</h1>
-        <div class="m-toggle">
-          <article>
-            <div class="m-toggle__heading">
-              <h1 class="m-toggle__title">トグルタイトル</h1>
+      <section id="career" class="theme-section p-career">
+        <div class="l-content">
+          <h1 class="m-title">キャリア紹介</h1>
+          <div class="m-career_path">
+            <div class="m-career_path__inner">
+              <div class="m-career_path__year">
+                <p>2017年</p>
+              </div>
+              <div class="m-career_path__content">
+                <p>
+                  制作会社へ就職<br>
+                  HTMLやCSS、JS等をもちいたサイトコーディングを担当<br>
+                  WordPressの組み込み業務、カスタマイズ対応への担当
+                </p>
+              </div>
             </div>
-            <div class="m-toggle__content">
-              <p class="m-toggle__read">トグルリード文</p>
-            </div>
-          </article>
 
-          <article>
-            <div class="m-toggle__heading">
-              <h1 class="m-toggle__title">トグルタイトル</h1>
+            <div class="m-career_path__inner">
+              <div class="m-career_path__year">
+                <p>2024年</p>
+              </div>
+              <div class="m-career_path__content">
+                <p>制作会社から独立</p>
+              </div>
             </div>
-            <div class="m-toggle__content">
-              <p class="m-toggle__read">トグルリード文</p>
-            </div>
-          </article>
 
-          <article>
-            <div class="m-toggle__heading">
-              <h1 class="m-toggle__title">トグルタイトル</h1>
+            <div class="m-career_path__inner">
+              <div class="m-career_path__year">
+                <p>2025年</p>
+              </div>
+              <div class="m-career_path__content">
+                <p>フリーランスとして活動中</p>
+              </div>
             </div>
-            <div class="m-toggle__content">
-              <p class="m-toggle__read">トグルリード文</p>
-            </div>
-          </article>
-
-          <!--  -->
-          <details class="m-accordion">
-            <summary >アコーディオンタイトル</summary>
-            <div class="m-accordion__content">
-              <p>アコーディオンタイトル</p>
-            </div>
-          </details>
-
-          <details class="m-accordion">
-            <summary >アコーディオンタイトル</summary>
-            <div class="m-accordion__content">
-              <p>アコーディオンタイトル</p>
-            </div>
-          </details>
-
-          <details class="m-accordion">
-            <summary >アコーディオンタイトル</summary>
-            <div class="m-accordion__content">
-              <p>アコーディオンタイトル</p>
-            </div>
-          </details>
+          </div>
         </div>
       </section>
 
       <!-- スキル紹介 -->
-      <section id="skill" class="">
-        <h1 class="m-title">スキル紹介</h1>
-        <div class="content">
-          <h2 class="">利用ソフト</h2>
-          <dl class="m-data">
-            <dt>obsidian</dt>
-            <dd>思考まとめ・メモ</dd>
-            <dt>Visual Studio Code</dt>
-            <dd>コーディング</dd>
-            <dt>cursor</dt>
-            <dd>コーディング</dd>
-            <dt>Adobe Photoshop</dt>
-            <dd>デザイン書き出し</dd>
-            <dt>Adobe Illustrator</dt>
-            <dd>デザイン書き出し</dd>
-            <dt>Adobe XD</dt>
-            <dd>デザイン書き出し</dd>
-          </dl>
+      <section id="skill" class="theme-section p-skill">
+        <div class="l-content">
+          <h1 class="m-title">スキル紹介</h1>
+          <div class="content">
+            <h2 class="m-content__title">利用ソフト</h2>
+            <dl class="m-data">
+              <dt>obsidian</dt>
+              <dd>思考まとめ・メモ</dd>
+              <dt>Visual Studio Code</dt>
+              <dd>コーディング</dd>
+              <dt>Adobe Photoshop</dt>
+              <dd>デザイン書き出し</dd>
+              <dt>Adobe Illustrator</dt>
+              <dd>デザイン書き出し</dd>
+              <dt>Adobe XD</dt>
+              <dd>デザイン書き出し</dd>
+            </dl>
 
-          <h2 class="m-title">スキルレベル</h2>
-          <small>※5段階評価</small>
-          <ul class="m-list">
-            <li>HTML：★★★★★</li>
-            <li>CSS：★★★★★</li>
-            <li>JS：★★★☆☆</li>
-            <li>PHP：★★★☆☆</li>
-            <li>WordPress：★★★★☆</li>
-          </ul>
+            <h2 class="m-content__title">スキルレベル</h2>
+            <dl class="m-data">
+              <dt>HTML</dt>
+              <dd>★★★★★</dd>
+              <dt>CSS</dt>
+              <dd>★★★★★</dd>
+              <dt>JS</dt>
+              <dd>★★★☆☆</dd>
+              <dt>PHP</dt>
+              <dd>★★★☆☆</dd>
+              <dt>WordPress</dt>
+              <dd>★★★★☆</dd>
+            </dl>
+          </div>
         </div>
       </section>
 
-      <!-- 制作実績 -->
-      <section id="works" class="">
-        <h1 class="m-title">制作実績</h1>
+      <!-- 制作物 -->
+      <section id="works" class="theme-section p-works">
+        <div class="l-content">
+          <h1 class="m-title">制作実績</h1>
+          <div class="m-card">
+            <article>
+              <div class="m-card__image">
+                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              </div>
+              <div class="m-card__content">
+                <h1 class="m-card__title">ごう歯科</h1>
+                <p class="m-card__read">
+                  コーディングを担当<br>
+                  制作期間：3～5日程度(20～30時間程度)<br>
+                  利用技術：<br>
+                  HTML/CSS/JS(jQuery)/WordPress<br>
+                  WordPressでは「スタッフ紹介」「お知らせ」に投稿機能を利用<br>
+                  テーマはオリジナル制作<br>
+                  ※プラグイン利用
+                </p>
+                <a href="https://www.go-dc.jp/" target="_blank">https://www.go-dc.jp/</a>
+              </div>
+            </article>
 
-        <div class="m-card">
-          <article>
-            <div class="m-card__image">
-              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
-            </div>
-            <div class="m-card__content">
-              <h1 class="m-card__title">ごう歯科</h1>
-              <p class="m-card__read">
-                コーディングを担当<br>
-                制作期間：3～5日程度(20～30時間程度)<br>
-                利用技術：<br>
-                HTML/CSS/JS(jQuery)/WordPress<br>
-                WordPressでは「スタッフ紹介」「お知らせ」に投稿機能を利用<br>
-                テーマはオリジナル制作<br>
-                ※プラグイン利用
-              </p>
-              <a href="https://www.go-dc.jp/" target="_blank">https://www.go-dc.jp/</a>
-            </div>
-          </article>
+            <article>
+              <div class="m-card__image">
+                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              </div>
+              <div class="m-card__content">
+                <h1 class="m-card__title">ミソノヒロコ | オフィシャルサイト</h1>
+                <p class="m-card__read">
+                  コーディングを担当<br>
+                  制作期間：2日程度(6～10時間程度)<br>
+                  利用技術：<br>
+                  HTML/CSS/JS(jQuery)/WordPress<br>
+                  WordPressでは「NEWS」「BLOG」に投稿機能を利用<br>
+                  テーマはオリジナル制作<br>
+                  ※プラグイン利用
+                </p>
+                <a href="https://misonohiroko.com/" target="_blank">https://misonohiroko.com/</a>
+              </div>
+            </article>
 
-          <article>
-            <div class="m-card__image">
-              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
-            </div>
-            <div class="m-card__content">
-              <h1 class="m-card__title">ミソノヒロコ | オフィシャルサイト</h1>
-              <p class="m-card__read">
-                コーディングを担当<br>
-                制作期間：2日程度(6～10時間程度)<br>
-                利用技術：<br>
-                HTML/CSS/JS(jQuery)/WordPress<br>
-                WordPressでは「NEWS」「BLOG」に投稿機能を利用<br>
-                テーマはオリジナル制作<br>
-                ※プラグイン利用
-              </p>
-              <a href="https://misonohiroko.com/" target="_blank">https://misonohiroko.com/</a>
-            </div>
-          </article>
+            <article>
+              <div class="m-card__image">
+                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              </div>
+              <div class="m-card__content">
+                <h1 class="m-card__title">うちわ屋 涼</h1>
+                <p class="m-card__read">
+                  コーディングを担当<br>
+                  制作期間：5～7日程度(30～45時間程度)<br>
+                  利用技術：<br>
+                  HTML/CSS/JS(jQuery)/WordPress<br>
+                  WordPressでは「お知らせ」に投稿機能を利用<br>
+                  テーマはオリジナル制作<br>
+                  ※プラグイン利用
+                </p>
+                <a href="https://uchiwayaryo.com/" target="_blank">https://uchiwayaryo.com/</a>
+              </div>
+            </article>
 
-          <article>
-            <div class="m-card__image">
-              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
-            </div>
-            <div class="m-card__content">
-              <h1 class="m-card__title">うちわ屋 涼</h1>
-              <p class="m-card__read">
-                コーディングを担当<br>
-                制作期間：5～7日程度(30～45時間程度)<br>
-                利用技術：<br>
-                HTML/CSS/JS(jQuery)/WordPress<br>
-                WordPressでは「お知らせ」に投稿機能を利用<br>
-                テーマはオリジナル制作<br>
-                ※プラグイン利用
-              </p>
-              <a href="https://uchiwayaryo.com/" target="_blank">https://uchiwayaryo.com/</a>
-            </div>
-          </article>
+            <article>
+              <div class="m-card__image">
+                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              </div>
+              <div class="m-card__content">
+                <h1 class="m-card__title">シーズファクトリー</h1>
+                <p class="m-card__read">
+                  コーディングを担当<br>
+                  制作期間：3～5日程度(20～30時間程度)<br>
+                  利用技術：<br>
+                  HTML/CSS/JS(jQuery)/EC-CUBE<br>
+                  ※プラグイン利用
+                </p>
+                <a href="https://www.si-zu-factory.com/" target="_blank">https://www.si-zu-factory.com/</a>
+              </div>
+            </article>
 
-          <article>
-            <div class="m-card__image">
-              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
-            </div>
-            <div class="m-card__content">
-              <h1 class="m-card__title">シーズファクトリー</h1>
-              <p class="m-card__read">
-                コーディングを担当<br>
-                制作期間：3～5日程度(20～30時間程度)<br>
-                利用技術：<br>
-                HTML/CSS/JS(jQuery)/EC-CUBE<br>
-                ※プラグイン利用
-              </p>
-              <a href="https://www.si-zu-factory.com/" target="_blank">https://www.si-zu-factory.com/</a>
-            </div>
-          </article>
+            <article>
+              <div class="m-card__image">
+                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              </div>
+              <div class="m-card__content">
+                <h1 class="m-card__title">BASE private sauna｜福岡の完全個室サウナ</h1>
+                <p class="m-card__read">
+                  コーディングを担当<br>
+                  制作期間：2日程度(6～10時間程度)<br>
+                  利用技術：<br>
+                  HTML/CSS/JS(jQuery)/WordPress<br>
+                  WordPressでは「新着情報」に投稿機能を利用<br>
+                  テーマはオリジナル制作<br>
+                  ※プラグイン利用
+                </p>
+                <a href="https://base-sauna.jp/" target="_blank">https://base-sauna.jp/</a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
+
+      <!-- 価格 -->
+      <section id="price" class="theme-section p-price">
+        <div class="l-content">
+          <h1 class="m-title">価格について</h1>
+          <table class="m-table">
+            <tbody>
+              <tr>
+                <th>制作基本費</th>
+                <td>20,000円~40,000円</td>
+              </tr>
+              <tr>
+                <th>トップページ静的コーディング</th>
+                <td>20,000円~40,000円</td>
+              </tr>
+              <tr>
+                <th>下層ページ静的コーディング</th>
+                <td>8,000円～15,000円</td>
+              </tr>
+              <tr>
+                <th>アニメーション実装（js/css）</th>
+                <td>5,000円～</td>
+              </tr>
+              <tr>
+                <th>WordPress基本実装費</th>
+                <td>20,000円</td>
+              </tr>
+              <tr>
+                <th>投稿タイプ実装費</th>
+                <td>10,000円～40,000円 / １式</td>
+              </tr>
+              <tr>
+                <th>フォーム設定費</th>
+                <td>15,000円 / １式</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
     </main>
 
   </body>
@@ -239,10 +294,10 @@
   <footer id="footer" class="l-footer">
     <nav class="l-footer__nav">
       <ul class="l-footer__list">
-        <li><a href="#introduction" class="">メニュー1</a></li>
-        <li><a href="#career" class="">メニュー2</a></li>
-        <li><a href="#skill" class="">メニュー3</a></li>
-        <li><a href="#works" class="">メニュー4</a></li>
+        <li><a href="#introduction" class="">自己紹介</a></li>
+        <li><a href="#career" class="">キャリア紹介</a></li>
+        <li><a href="#skill" class="">スキル紹介</a></li>
+        <li><a href="#works" class="">制作物</a></li>
       </ul>
     </nav>
   </footer>
