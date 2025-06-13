@@ -27,7 +27,7 @@
 
   <!-- pages -->
   <link rel="stylesheet" href="./assets/css/pages/top.css">
-  <link rel="preload" href="https://placehold.jp/2000x750.png" as="image" />
+  <link rel="preload" href="assets/img/main.jpg" as="image" />
 </head>
 <body>
 
@@ -46,18 +46,21 @@
   <body id="body" class="l-body">
     <main class="l-main">
       <div class="theme-mv">
-        <img src="https://placehold.jp/2000x750.png" alt="ダミー画像" width="2000" height="750" >
+        <picture>
+          <source srcset="assets/img/webp/main.webp" type="image/webp"/>
+          <img src="assets/img/main.jpg" alt="" width="2000" height="1000" >
+        </picture>
       </div>
       <!-- 自己紹介 -->
       <section id="introduction" class="theme-section p-self_introduction">
         <div class="l-content">
           <h1 class="m-title">自己紹介</h1>
-          <!-- <div class="m-heading">
-            <h2 class="m-title"><i>アイコン</i>タイトル</h2>
-          </div> -->
           <div class="m-content">
             <div class="m-content__image">
-              <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+              <picture>
+                <source srcset="assets/img/webp/profile.webp" type="image/webp"/>
+                <img src="assets/img/profile.jpg" alt="" width="300" height="300" >
+              </picture>
             </div>
             <div class="m-content__read">
               <p>
@@ -153,7 +156,10 @@
           <div class="m-card">
             <article>
               <div class="m-card__image">
-                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+                <picture>
+                  <source srcset="assets/img/webp/go-dc.webp" type="image/webp"/>
+                  <img src="assets/img/go-dc.jpg" alt="" width="300" height="169" >
+                </picture>
               </div>
               <div class="m-card__content">
                 <h1 class="m-card__title">ごう歯科</h1>
@@ -172,7 +178,10 @@
 
             <article>
               <div class="m-card__image">
-                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+                <picture>
+                  <source srcset="assets/img/webp/misonohiroko.webp" type="image/webp"/>
+                  <img src="assets/img/misonohiroko.jpg" alt="" width="300" height="169" >
+                </picture>
               </div>
               <div class="m-card__content">
                 <h1 class="m-card__title">ミソノヒロコ | オフィシャルサイト</h1>
@@ -191,7 +200,10 @@
 
             <article>
               <div class="m-card__image">
-                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+                <picture>
+                  <source srcset="assets/img/webp/uchiwayaryo.webp" type="image/webp"/>
+                  <img src="assets/img/uchiwayaryo.jpg" alt="" width="300" height="169" >
+                </picture>
               </div>
               <div class="m-card__content">
                 <h1 class="m-card__title">うちわ屋 涼</h1>
@@ -210,7 +222,10 @@
 
             <article>
               <div class="m-card__image">
-                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+                <picture>
+                  <source srcset="assets/img/webp/si-zu_factory.webp" type="image/webp"/>
+                  <img src="assets/img/si-zu_factory.jpg" alt="" width="300" height="169" >
+                </picture>
               </div>
               <div class="m-card__content">
                 <h1 class="m-card__title">シーズファクトリー</h1>
@@ -227,7 +242,10 @@
 
             <article>
               <div class="m-card__image">
-                <img src="https://placehold.jp/300x300.png" alt="ダミー画像" width="300" height="300" >
+                <picture>
+                  <source srcset="assets/img/webp/base-sauna.webp" type="image/webp"/>
+                  <img src="assets/img/base-sauna.jpg" alt="" width="300" height="169" >
+                </picture>
               </div>
               <div class="m-card__content">
                 <h1 class="m-card__title">BASE private sauna｜福岡の完全個室サウナ</h1>
@@ -244,52 +262,6 @@
               </div>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- 価格 -->
-      <section id="price" class="theme-section p-price">
-        <div class="l-content">
-          <h1 class="m-title">価格について</h1>
-          <table class="m-table">
-            <tbody>
-              <tr>
-                <th>制作基本費<small>※1</small></th>
-                <td>20,000円~40,000円</td>
-              </tr>
-              <tr>
-                <th>トップページ静的コーディング<small>※2</small></th>
-                <td>20,000円~40,000円</td>
-              </tr>
-              <tr>
-                <th>下層ページ静的コーディング<small>※2</small></th>
-                <td>8,000円～15,000円</td>
-              </tr>
-              <tr>
-                <th>アニメーション実装（js/css）</th>
-                <td>5,000円～</td>
-              </tr>
-              <tr>
-                <th>WordPress基本実装費<small>※3</small></th>
-                <td>20,000円</td>
-              </tr>
-              <tr>
-                <th>投稿タイプ実装費<small>※4</small></th>
-                <td>10,000円～40,000円 / １式</td>
-              </tr>
-              <tr>
-                <th>フォーム設定費<small>※5</small></th>
-                <td>15,000円 / １式</td>
-              </tr>
-            </tbody>
-          </table>
-          <ul class="m-list">
-            <li>※１…テスト環境の準備、コミュニケーションコスト、共通部分コーディング等含みます。</li>
-            <li>※２…レスポンシブ対応含みます。</li>
-            <li>※３…管理画面の仕様はWordPress本体およびプラグインに従います。</li>
-            <li>※４…絞り込み検索を実装する場合は別料金となります。</li>
-            <li>※５…確認・完了画面込み。選択肢の連動など、基本機能とは異なる仕様がある場合は別料金となります。</li>
-          </ul>
         </div>
       </section>
 
