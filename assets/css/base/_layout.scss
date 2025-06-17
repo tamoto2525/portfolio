@@ -6,18 +6,48 @@
 }
 
 .l-header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
+  z-index: 10;
   &__logo {
     @include fz(24);
   }
-  &__nav {}
+  &__nav {
+    @include mq(sp) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      width: 100%;
+      height: 0px;
+      background-color: rgba(#ffffff, 0.9);
+      transition: .2s ease all;
+    }
+
+    &.is-open {
+      pointer-events: all;
+      opacity: 1;
+      height: 100vh;
+    }
+  }
   &__list {
     display: flex;
     gap: 0 20px;
+    @include mq(sp) {
+      flex-direction: column;
+      gap: 10px;
+      max-width: 70%;
+      margin: 50px auto;
+    }
     li {
+      @include mq(sp) {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #555;
+      }
       a {
         display: inline-block;
         position: relative;
@@ -36,13 +66,63 @@
           transform: translateX(-50%);
           background-color: #555;
           transition: ease .3s;
+          @include mq(sp) {
+            content: none;
+          }
         }
 
         &:hover {
           &::after {
             width: 100%;
+            @include mq(sp) {
+              content: none;
+            }
           }
         }
+      }
+    }
+  }
+  &__navBtn {
+    display: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    z-index: 1;
+    @include mq(sp) {
+      display: block;
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      width: 35px;
+      height: 35px;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: #555;
+        box-shadow: 0px 0px 0px 1px #fff;
+        transition: .2s ease all;
+      }
+      &::before {
+        top: 10px;
+      }
+      &::after {
+        bottom: 10px;
+      }
+    }
+    &.is-open {
+      &::before {
+        top: 16px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        bottom: 16px;
+        transform: rotate(-45deg);
       }
     }
   }
@@ -56,21 +136,36 @@
   max-width: $contentSize;
   margin-right: auto;
   margin-left: auto;
+  @include mq(tab) {
+    max-width: calc(100% * 0.9);
+  }
 }
 
 .l-footer {
   margin-top: 100px;
   padding: 30px 0;
   background-color: #555;
+  @include mq(sp) {
+    margin-top: 70px;
+  }
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
+    @include mq(sp) {
+      gap: 10px;
+    }
     li {
+      @include mq(sp) {
+        @include fz(14);
+      }
       &:not(:first-child) {
         border-left: 1px solid #fff;
         padding-left: 15px;
+        @include mq(sp) {
+          padding-left: 10px;
+        }
       }
       a {
         position: relative;

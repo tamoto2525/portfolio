@@ -4,7 +4,14 @@
   display: flex;
   justify-content: flex-start;
   gap: 15px 35px;
-  &__image {}
+  @include mq(sp) {
+    flex-direction: column;
+  }
+  &__image {
+    @include mq(sp) {
+      max-width: 70%;
+    }
+  }
   &__read {}
   &__title {
     @include fz(20);
@@ -51,10 +58,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  &__image {}
+  @include mq(sp) {
+    gap: 40px;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
   &__content {
     & > *{
       margin-top: 10px;
+      @include fz(14);
+      word-wrap: break-word;
     }
   }
   &__title {
@@ -62,6 +77,10 @@
   }
   article {
     max-width: 300px;
+    @include mq(sp) {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
   a {
     display: inline-block;
@@ -74,22 +93,38 @@
   width: 70%;
   margin-right: auto;
   margin-left: auto;
+  @include mq(tab) {
+    width: 100%;
+  }
+  @include mq(sp) {
+    flex-direction: column;
+  }
   dt,dd {
     padding: 10px;
     border: 2px solid #555;
     background-color: #fff;
     &:not(:first-of-type) {
       margin-top: 15px;
+      margin-top: 0;
     }
   }
   dt {
     min-width: 200px;
     border-right: none;
+    @include mq(sp) {
+      width: 100%;
+      border-right: 2px solid #555;
+      border-bottom: none;
+    }
   }
   dd {
     width: calc(100% - 200px);
     max-width: 100%;
     margin-right: auto;
+    @include mq(sp) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -167,7 +202,7 @@
     width: calc(100% - 30px);
   } */
   &__year {
-    // text-align: right;
+    flex-shrink: 0;
   }
   &__content {
     // text-align: left;
