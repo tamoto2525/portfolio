@@ -1,0 +1,65 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.l-home {
+  // max-width: $contentSize;
+  width: min(100%, $contentSize);
+  margin-inline: auto;
+  padding-block: 90px;
+  &-header {
+    h1 {
+      @include fz(64);
+      font-weight: bold;
+      margin-block: 0 48px
+    }
+    h2 {
+      @include fz(48);
+      font-weight: bold;
+      margin-block: 0 48px
+    }
+
+    p {
+      @include fz(24);
+      line-height: 1.5;
+      margin-bottom: 40px;
+    }
+
+    &.main-content {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.l-service {
+  display: flex;
+  justify-content: space-between;
+  gap: 140px;
+  &-content {
+    width: 100%;
+    max-width: 516px;
+  }
+  &-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+  }
+}
+
+.l-subSection {
+  background-color: #F7F7F7;
+  .l-home-header {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}

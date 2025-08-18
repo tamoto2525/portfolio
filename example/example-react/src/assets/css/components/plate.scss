@@ -1,0 +1,58 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.m-plate-grid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &.-col-3 {
+    gap: 32px;
+    .m-plate {
+      width: 405px;
+    }
+  }
+  &.-col-2 {
+    gap: 32px;
+    .m-plate {
+      width: 624px;
+    }
+  }
+}
+.m-plate {
+  background-color: #fff;
+  padding: 32px;
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+  line-height: 1.5;
+
+  &-title {
+    @include fz(24);
+    font-weight: medium;
+    margin-bottom: 48px;
+  }
+
+  &-users {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &-icons {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden
+  }
+
+  &-name {
+    @include fz(16);
+    font-weight: medium;
+    margin-block: 0;
+  }
+
+  &-description {
+    @include fz(16);
+    margin-block: 0;
+    color: #828282;
+  }
+}

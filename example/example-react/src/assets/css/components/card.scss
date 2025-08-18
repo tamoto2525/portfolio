@@ -1,0 +1,49 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.m-card-grid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &.-col-3 {
+    gap: 32px;
+    .m-card {
+      width: 405px; // Adjust width for three cards per row
+    }
+  }
+  &.-col-2 {
+    gap: 32px;
+    .m-card {
+      width: 624px; // Adjust width for three cards per row
+    }
+  }
+}
+.m-card {
+  background-color: #fff;
+  box-sizing: border-box;
+  line-height: 1.5;
+
+  &-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    @include fz(24);
+    font-weight: medium;
+    margin-block: 0;
+  }
+
+  &-description {
+    @include fz(20);
+    margin-block: 0;
+  }
+
+  &-price {
+    @include fz(20);
+    font-weight: medium;
+    margin-block: 0;
+  }
+}

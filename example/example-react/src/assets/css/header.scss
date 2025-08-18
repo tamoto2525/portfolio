@@ -1,0 +1,23 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+.l-header {
+  position: relative;
+  max-width: $contentSize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  z-index: 10;
+  margin-inline: auto;
+}
+.l-nav {
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 15px 48px;
+    li {
+      list-style: none;
+    }
+  }
+}

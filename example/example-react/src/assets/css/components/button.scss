@@ -1,0 +1,28 @@
+@use "../variables" as *;
+@use "../mixin" as *;
+
+.m-button {
+  display: inline-block;
+  @include fz(24);
+  font-weight: medium;
+  color: #fff;
+  text-align: center;
+  a {
+    display: block;
+    padding: 14px 24px;
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 8px;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &.-cancel {
+    a {
+      color: #000;
+      background-color: #E6E6E6;
+    }
+  }
+
+}
