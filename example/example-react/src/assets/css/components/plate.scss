@@ -7,14 +7,38 @@
   flex-wrap: wrap;
   &.-col-3 {
     gap: 32px;
+    @include mq(pc) {
+      gap: 2%;
+    }
+    @include mq(sp) {
+      gap: 24px;
+    }
     .m-plate {
       width: 405px;
+      @include mq(pc) {
+        width: 32%;
+      }
+      @include mq(sp) {
+        width: 100%; // Full width on small screens
+      }
     }
   }
   &.-col-2 {
     gap: 32px;
+    @include mq(pc) {
+      gap: 2%;
+    }
+    @include mq(sp) {
+      gap: 24px;
+    }
     .m-plate {
       width: 624px;
+      @include mq(pc) {
+        width: 48%;
+      }
+      @include mq(sp) {
+        width: 100%; // Full width on small screens
+      }
     }
   }
 }
@@ -24,11 +48,17 @@
   border: 1px solid #E6E6E6;
   border-radius: 12px;
   line-height: 1.5;
+  @include mq(sp) {
+    padding: 20px;
+  }
 
   &-title {
     @include fz(24);
     font-weight: medium;
     margin-bottom: 48px;
+    @include mq(sp) {
+      margin-bottom: 24px;
+    }
   }
 
   &-users {

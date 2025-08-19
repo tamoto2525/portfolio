@@ -5,7 +5,7 @@ $breakpoints: (
   'sps': (max-width: 320px),
   'sp': (max-width: 640px),
   'tab': (max-width: 768px),
-  'pc': (max-width: 1000px),
+  'pc': (max-width: 1024px),
 ) !default;
 
 @mixin mq($breakpoint) {

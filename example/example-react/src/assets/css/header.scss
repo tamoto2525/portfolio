@@ -10,14 +10,24 @@
   padding: 25px;
   z-index: 10;
   margin-inline: auto;
-}
-.l-nav {
-  &-links {
-    display: flex;
-    align-items: center;
-    gap: 15px 48px;
-    li {
-      list-style: none;
+  @include mq(pc) {
+    width: min(100%, $contentSpSize);
+    padding-inline: $contentSpPadding;
+  }
+  .l-nav {
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 15px 48px;
+      @include mq(tab) {
+        gap: 15px 36px;
+      }
+      @include mq(sp) {
+        gap: 15px;
+      }
+      li {
+        list-style: none;
+      }
     }
   }
 }

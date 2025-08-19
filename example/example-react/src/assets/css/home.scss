@@ -6,26 +6,51 @@
   width: min(100%, $contentSize);
   margin-inline: auto;
   padding-block: 90px;
+  @include mq(pc) {
+    width: min(100%, $contentSpSize);
+    padding-inline: $contentSpPadding;
+    padding-block: 65px;
+  }
+  @include mq(tab) {
+    padding-block: 40px;
+  }
+  @include mq(sp) {
+    padding-block: 25px;
+  }
   &-header {
     h1 {
       @include fz(64);
       font-weight: bold;
-      margin-block: 0 48px
+      margin-block: 0 48px;
+      @include mq(sp) {
+        @include fz(48);
+        margin-block: 0 24px
+      }
     }
     h2 {
       @include fz(48);
       font-weight: bold;
-      margin-block: 0 48px
+      margin-block: 0 48px;
+      @include mq(sp) {
+        @include fz(30);
+        margin-block: 0 24px;
+      }
     }
 
     p {
       @include fz(24);
       line-height: 1.5;
       margin-bottom: 40px;
+      @include mq(sp) {
+        @include fz(20);
+      }
     }
 
     &.main-content {
       margin-bottom: 80px;
+      @include mq(pc) {
+        margin-bottom: 45px;
+      }
     }
   }
 }
@@ -34,6 +59,10 @@
   display: flex;
   justify-content: space-between;
   gap: 140px;
+  @include mq(tab) {
+    flex-direction: column;
+    gap: 50px;
+  }
   &-content {
     width: 100%;
     max-width: 516px;
@@ -42,6 +71,20 @@
     display: flex;
     gap: 16px;
     margin-top: 40px;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    @include mq(tab) {
+      gap: 28px;
+    }
+  }
+  &-item {
+    p {
+      margin-top: 8px;
+    }
   }
 }
 
@@ -56,9 +99,14 @@
     display: flex;
     justify-content: space-between;
     gap: 200px;
+    @include mq(sp) {
+      flex-direction: column;
+      gap: 50px;
+    }
   }
   &-buttons {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 24px;
   }

@@ -7,12 +7,18 @@
   font-weight: medium;
   color: #fff;
   text-align: center;
+  @include mq(sp) {
+    @include fz(16);
+  }
   a {
     display: block;
     padding: 14px 24px;
     text-decoration: none;
     background-color: #000;
     border-radius: 8px;
+    @include mq(sp) {
+      padding: 6px 10px;
+    }
     &:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
